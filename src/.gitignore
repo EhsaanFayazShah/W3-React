@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Temporary files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Coverage directory
+coverage/
+
+# Public directory
+public/*.html
+public/*.js

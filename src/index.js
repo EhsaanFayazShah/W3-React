@@ -1,13 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import reportWebVitals from "./reportWebVitals";
+import { App, Car, Garage, Goal } from "./App";
+
+const cars = ["Ford", "BMW", "Audi", "Lamborghoni"];
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Car color="red" />
+    <Car model="mustang" />
+    <Goal isGoal="true" />
+    <Garage cars={cars} />
   </React.StrictMode>
 );
 
